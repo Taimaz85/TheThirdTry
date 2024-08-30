@@ -1,0 +1,47 @@
+.menu-toggle {
+    order: 1;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: crimson;
+    margin: 4px 0;
+    transition: all 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background-color: #3b3b3b;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        
+        overflow: hidden;
+
+        /* Smooth transition */
+        
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul.showing {
+        left: 0;
+        max-height: 500px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

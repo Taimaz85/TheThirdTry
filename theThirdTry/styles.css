@@ -1,0 +1,203 @@
+html {
+    scroll-behavior:smooth;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b3b3b;
+    color: red;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color:crimson;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:deeppink;
+}
+
+.language-selector a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.banner {
+    background: url('./Images/banner3.jpg') no-repeat center;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 12rem 0rem;
+    position: relative;
+    visibility: visible;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px red;
+}
+
+hr {
+    margin: 5% 2% 5% 5%;
+}
+
+.banner .cta {
+    /*background-color: #f04e24;*/
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: white;
+    opacity: 0.5;
+}
+
+.cta:hover {
+    background-color: #f04e23;
+}
+
+.content-section {
+    margin-left: 10%;
+    display: block;
+}
+
+.product-category {
+    position: relative;
+    display: inline-block;
+    margin: 5%;
+    width: 400px; /* Ensure the container matches the image width */
+}
+
+.product-picture {
+    width: 100%;
+    border-radius: 50px;
+    display: block;
+}
+
+.product-category p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.product-category a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    width: calc(35% - 20px); /* Adjust width to match padding */
+    
+    color: black;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: white;
+    opacity: 0.5;
+}
+
+.product-category a:hover {
+    background-color: #f04e23;
+}
+
+/* Contact Us */
+form {
+    background: url(./Images/login.jpg);
+    padding-bottom: 15px;
+    margin-right: 120px
+}
+
+form input {
+    width: 70%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    background: none;
+    background-color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    width: 70%;
+    height: 80px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: none;
+    background-color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+button:active {
+    background-color: rgba(255,255,255,0.4);
+}
+
+section .contact {
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+}
+
+button {
+    width: 20%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3b3b3b;
+    margin-top: 15px;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,185 @@
+/* General configuration */
+html {
+    scroll-behavior:smooth;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+/* Main - The top of the page */
+.banner .cta {
+    /*background-color: #f04e24;*/
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: white;
+    opacity: 0.5;
+}
+
+.cta:hover {
+    background-color: #f04e23;
+}
+
+.content-section {
+    align-items: center;
+    display: block;
+}
+
+.product-category {
+    position: relative;
+    display: inline-block;
+    margin: 5%;
+    width: 400px; /* Ensure the container matches the image width */
+    border: 1px solid grey;
+    padding: 15px;
+    box-shadow: 20px 20px 10px grey;
+    border-radius: 15px;
+}
+
+.product-picture {
+    width: 100%;
+    border-radius: 50px;
+    display: block;
+}
+
+.product-category p {
+    font-size: 1.5rem;
+}
+
+.product-category a {
+    position: absolute;
+    top:200px;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    width: calc(35% - 20px); /* Adjust width to match padding */
+    
+    color: black;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: white;
+    opacity: 0.5;
+}
+
+.product-category a:hover {
+    background-color: #f04e23;
+}
+
+hr {
+    margin: 5% 2% 5% 5%;
+}
+
+p {
+    text-align: center;
+}
+
+.content-section p {
+    padding: 20px;
+}
+
+/* Contact Us */
+form {
+    background: url(../Images/login.jpg);
+    padding-bottom: 15px;
+}
+
+form label {
+    color: white;
+    font-size: 20px;
+    backdrop-filter: blur(5px);
+    
+}
+
+form input {
+    width: 70%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+    background: none;
+    background-color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    width: 70%;
+    height: 80px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: none;
+    background-color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+button:active {
+    background-color: rgba(255,255,255,0.4);
+}
+
+section .contact {
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+}
+
+button {
+    width: 20%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #3b3b3b;
+    margin-top: 15px;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 1110px) {
+
+    h1 , h2 {
+        text-align: center;
+    }
+    #products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1110px) {
+    h1 , h2 {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 , h2 {
+        margin-left: 100px;
+    }
+}

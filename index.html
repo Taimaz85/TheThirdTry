@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>PROCESSED MEAT PRODUCTS</title>
+        <link rel="stylesheet" href="./Styles/styles.css">
+        <link rel="stylesheet" href="./Styles/toggle.css">
+        <link rel="stylesheet" href="./Styles/header-menu.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo tooltip" data-text="HOME PAGE">
+                <a href="../index.html">
+                    Processed Meat Products
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#quality">Quality</a></li>
+                    <li><a href="#sustainability">Sustainability</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/pages/login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <a href="#">EN</a> | <a href="#">HU</a>
+            </div>
+
+            <!-- Mobile menu toggle button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="backdrop" id="backdrop"></div>
+        </header>
+        
+        <main>
+            <section class="banner">
+                <h1>Quality and Tradition in Every Bite</h1>
+                <a href="#products" class="cta">Explore Products</a>
+                
+            </section>
+
+            <hr>
+
+            <section id="about" class="content-section">
+                <h1>About Us</h1>
+                <p>Our company has a long history of producing high-quality 
+                    processed meat products. Learn about our journey and values.</p>
+            </section>
+
+            <hr>
+
+            <section id="products" class="content-section">
+                <h1>Products</h1>
+                <div class="product-category">
+                    <img class="product-picture" src="./Images/sausage.jpg"
+                    alt="Picture of susage" />
+                    <a href="./pages/sausage.html#sausage">
+                        <h3>Sausage</h3>
+                    </a>
+                    <p>Flavorful sausages made from the finest ingredients.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="./Images/bacon.jpg"
+                    alt="Picture of bacon"/>
+                    <a href="./pages/bacon.html#bacon">
+                        <h3>Bacon</h3>
+                    </a>
+                    <p>Crispy and savory bacon perfect for any meal.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="./Images/ham.jpg"
+                    alt="Picture of ham"/>
+                    <a href="./pages/ham.html">
+                        <h3>Ham</h3>
+                    </a>
+                    <p>Premium ham that melts in your mouth.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="./Images/salami.jpg"
+                    alt="Picture of salami"/>
+                    <a href="./pages/salami.html">
+                        <h3>Salami</h3>
+                    </a>
+                    <p>A variety of salamies for pizza and more.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="./Images/processed-meat.jpg"
+                    alt="Picture of processed meats"/>
+                    <a href="./pages/processedMeat.html">
+                        <h3>Processed Meat</h3>
+                    </a>
+                    <p>Different taste experience of meats in various products</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="quality" class="content-section">
+                <h1>Quality</h1>
+                <p>We add here to the highest standards of quality control to ensure the best products for our customers.</p>
+            </section>
+
+            <hr>
+
+            <section id="sustainability" class="content-section">
+                <h1>Sustainability</h1>
+            <p>Our commitment to sustainability includes eco-friendly practices and community engagement.</p>
+            </section>
+
+            <hr>
+
+            <section id="contact" class="content-section">
+                <h1>Contact us</h1>
+                <form class="contact">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <hr>
+
+                <div class="contact-info">
+                    <p>Address: 123 Meat St, Food City</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@meatproducts.com</p>
+                    <div class="social-media">
+                        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Processed Meat Products | BitNJoy Company. All rights reserved.</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
