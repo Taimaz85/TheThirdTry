@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./Styles/styles.css">
         <link rel="stylesheet" href="./Styles/toggle.css">
         <link rel="stylesheet" href="./Styles/header-menu.css">
+        <link rel="stylesheet" href="./Styles/search.css">
     </head>
     <body>
         <header>
@@ -14,6 +15,11 @@
                 <a href="../index.html">
                     Processed Meat Products
                 </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..." id="search-input">
+                <div id="search-results"></div>
+                <script src="./search.js"></script>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -76,7 +82,7 @@
                 <div class="product-category">
                     <img class="product-picture" src="./Images/ham.jpg"
                     alt="Picture of ham"/>
-                    <a href="./pages/ham.html">
+                    <a href="./pages/ham.html#ham">
                         <h3>Ham</h3>
                     </a>
                     <p>Premium ham that melts in your mouth.</p>

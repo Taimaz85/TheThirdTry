@@ -4,11 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <title>HAM</title>
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../Styles/header-menu.css">
+        <link rel="stylesheet" href="../Styles/styles.css">
+        <link rel="stylesheet" href="../Styles/toggle.css">
+        <link rel="stylesheet" href="../Styles/products.css">
     </head>
     <body>
         <header>
-            <div class="logo">Processed Meat Products</div>
+            <div class="logo tooltip" data-text="HOME PAGE">
+                <a href="../index.html">
+                    Processed Meat Products
+                </a>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About Us</a></li>
@@ -24,9 +31,314 @@
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <div class="backdrop" id="backdrop"></div>
         </header>
 
-        <a href="../index.html">Back to home</a>
+        <main>
+            <section id="products" class="content-section">
+                <h2>Products</h2>
+                <div class="product-category">
+                    <img class="product-picture" src="../Images/sausage.jpg"
+                    alt="Picture of susage" />
+                    <a href="./sausage.html#sausage">
+                        <h3>Sausage</h3>
+                    </a>
+                    <p>Flavorful sausages made from the finest ingredients.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="../Images/bacon.jpg"
+                    alt="Picture of bacon"/>
+                    <a href="./bacon.html#bacon">
+                        <h3>Bacon</h3>
+                    </a>
+                    <p>Crispy and savory bacon perfect for any meal.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="../Images/ham.jpg"
+                    alt="Picture of ham"/>
+                    <a href="./ham.html#ham">
+                        <h3>Ham</h3>
+                    </a>
+                    <p>Premium ham that melts in your mouth.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="../Images/salami.jpg"
+                    alt="Picture of salami"/>
+                    <a href="./pages/salami.html">
+                        <h3>Salami</h3>
+                    </a>
+                    <p>A variety of salamies for pizza and more.</p>
+                </div>
+                <div class="product-category">
+                    <img class="product-picture" src="../Images/processed-meat.jpg"
+                    alt="Picture of processed meats"/>
+                    <a href="./pages/processedMeat.html">
+                        <h3>Processed Meat</h3>
+                    </a>
+                    <p>Different taste experience of meats in various products</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <h1 id="ham">All kinds of Hams:</h1>
+            <section class="sausages">
+                <div class="product-category product-detail" id="black">
+                    <h2>Black Froest Ham</h2>
+                    <img class="product-picture" src="../Images/Hams/black-froest-ham.jpg"
+                    alt="Picture of Black Froest Ham" />
+                    <a class="product-link" href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-black-froest" id="read-more-black-froest">
+                    <div class="content">
+                        <p>
+                            Black Forest ham originates from the Black Forest region in Germany. It's 
+                            known for its smoky flavor, black exterior, and deep red color. To create 
+                            Black Forest ham, pork hind legs are carefully selected and trimmed before 
+                            being cured with a blend of salt and a mix of spices such as juniper berries, 
+                            coriander, and pepper. It's cured for up to three weeks, which creates its 
+                            signature black exterior. The ham is then cold smoked over pine or fir wood, 
+                            which imparts a unique aroma and flavor to the meat. One key characteristic 
+                            of Black Forest ham is its distinct marbling, which comes from the 
+                            high-quality pork used in the curing process. This marbling adds to the 
+                            tenderness and succulence of the ham, making it a versatile ingredient in a 
+                            variety of dishes.
+                        </p>
+                        <p>
+                            In the European Union, Black Forest ham has been granted a Protected 
+                            Geographical Indication (PGI). This designation ensures that only ham produced 
+                            in the traditional manner and within the Black Forest region can be labeled as 
+                            Black Forest ham. However, in the United States, there are no restrictions on 
+                            the use of the term "Black Forest ham," allowing for a wider range of products 
+                            to be labeled as such. When purchasing Black Forest ham in the U.S., the product 
+                            probably is not an imported specialty item. Instead, it is typically a 
+                            brine-cured and cold-smoked ham sourced from American pig farms. It may not even 
+                            be smoked; it often has artificial smoke flavorings added to achieve a similar 
+                            taste profile. If you want to offer true Black Forest ham in your restaurant, 
+                            make sure you read your labels and investigate the manufacturer.
+                        </p>
+                    </div>
+                    <label for="read-more-black-froest"></label>
+                </div>
+                <div class="product-category product-detail" id="capicola">
+                    <h2>Capicola</h2>
+                    <img class="product-picture" src="../Images/Hams/capicola.jpg"
+                    alt="Picture of Capicola" />
+                    <a class="product-link" href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-capicola" id="read-more-capicola">
+                    <div class="content">
+                        <p>
+                            Capicola is a traditional Italian cured meat that is popular in 
+                            delis and restaurants across the globe. It’s also known as coppa, 
+                            capocollo, and (in New Jersey) gabagool. This specialty pork product 
+                            comes from the neck fillet of the pig and is seasoned before being 
+                            dry-cured and aged. Capicola is sliced thin and served as part of 
+                            charcuterie boards, sandwiches, or antipasto platters. Its rich 
+                            flavor profile, which combines elements of sweetness, saltiness, and 
+                            spiciness, makes it a versatile ingredient that can elevate almost 
+                            any dish.
+                        </p>
+                        <p>
+                            There are two main types of capicola: hot and sweet. The spice blend 
+                            for sweet coppa often includes cinnamon, nutmeg, cloves, bay leaves, 
+                            and juniper berries. Spicy coppa is typically seasoned with cayenne 
+                            pepper, garlic, red chili flakes, and paprika. No matter its seasoning, 
+                            capicola offers a good ratio of meat to fat, and its paper-thin 
+                            consistency will melt in your mouth.
+                        </p>
+                    </div>
+                    <label for="read-more-capicola"></label>
+                </div>
+                <div class="product-category product-detail" id="country">
+                    <h2>Country Ham</h2>
+                    <img class="product-picture" src="../Images/Hams/country-ham.jpg"
+                    alt="Picture of Country Ham" />
+                    <a href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-country-ham" id="read-more-country-ham">
+                    <div class="content">
+                        <p>
+                            Country ham is a type of dry-cured ham that is typically associated with 
+                            Southern cuisine in the United States. It has a bold flavor and employs a 
+                            long history of preservation techniques. It’s made by rubbing a leg of pork 
+                            with salt, sugar, and spices before aging it for six months to three years. 
+                            One key characteristic of country ham is its intense saltiness, which comes 
+                            from its curing process. While it cures it develops its trademark rich, 
+                            savory flavor profile that sets it apart from other types of ham. The aging 
+                            process also contributes to the unique taste and texture of country ham, as 
+                            it becomes firmer and more concentrated in flavor over time.
+                        </p>
+                        <p>
+                            Country ham is usually smoked over hickory or red oak wood, enhancing its 
+                            natural flavors. However, some varieties of country ham like North Carolina’s 
+                            “salt-and-pepper ham” are not smoked. Traditionally, country ham is sliced thin 
+                            and served as a standalone dish or as a flavorful addition to a variety of 
+                            recipes. It is commonly enjoyed as a breakfast meat. Add it to your offerings 
+                            at your hotel’s continental breakfast or pair it with biscuits at your homestyle 
+                            diner. It is also an excellent addition to comforting soups, stews, and casseroles. 
+                            Overall, country ham is a beloved ingredient in Southern cooking and beyond, 
+                            prized for its robust taste and versatility in various culinary applications.
+                        </p>
+                    </div>
+                    <label for="read-more-country-ham"></label>
+                </div>
+                <div class="product-category product-detail" id="honey">
+                    <h2>Honey Ham</h2>
+                    <img class="product-picture" src="../Images/Hams/honey-ham.jpg"
+                    alt="Picture of Honey Ham" />
+                    <a href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-honey-ham" id="read-more-honey-ham">
+                    <div class="content">
+                        <p>
+                            Honey ham is a popular variety of ham that is beloved for its sweet 
+                            and savory flavor profile. It’s made from the shank, the lower half 
+                            of the pig’s leg above the hock. The shank cut is tender and easy to 
+                            carve. However, chefs must take care because it dries out easily when 
+                            cooked. Honey ham is wet cured by soaking it in a brine solution that 
+                            includes honey, sugar, and spices. Honey must make up at least half 
+                            of the sweetening ingredient in the curing mix for it to be considered 
+                            a honey ham. Not only does the honey add a touch of sweetness, but it 
+                            also helps to create a caramelized crust when the ham is cooked, giving 
+                            it a delicious glaze.
+                        </p>
+                        <p>
+                            Honey ham is a versatile ingredient that can be enjoyed in various ways. 
+                            It can be sliced and served cold in sandwiches or salads, or it can be 
+                            heated and glazed for a warm and comforting main dish. Its sweet and 
+                            salty flavor pairs well with a wide range of accompaniments, making it a 
+                            popular choice for catering events, delis, and restaurants. When 
+                            purchasing honey ham for commercial use, consider factors such as the 
+                            quality of the meat, the ingredients used in the curing process, and any 
+                            certifications or labels that indicate the ham meets certain standards. 
+                        </p>
+                    </div>
+                    <label for="read-more-honey-ham"></label>
+                </div>
+                <div class="product-category product-detail" id="jamon">
+                    <h2>Jamon Iberico</h2>
+                    <img class="product-picture" src="../Images/Hams/jamon-iberico.jpg"
+                    alt="Picture of Jamon Iberico" />
+                    <a href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-jamon-iberico" id="read-more-jamon-iberico">
+                    <div class="content">
+                        <p>
+                            Jamon Iberico, also known as Iberian ham, is a highly prized and luxurious 
+                            type of ham originating from Spain and Portugal. This premium ham is renowned 
+                            for its exceptional flavor, texture, and unique curing process. The curing 
+                            process of Jamon Iberico is a meticulous art that can take anywhere from 12 
+                            to 48 months (about 4 years), depending on the type and quality of the ham. 
+                            During this time, the ham is salted, dried, and aged in a controlled environment 
+                            to develop its complex flavors and aromas. Whether enjoyed on its own, paired 
+                            with cheese and wine, or used in recipes, Jamon Iberico is a versatile and 
+                            decadent ingredient that adds a touch of luxury to any dish.
+                        </p>
+                        <p>
+                            There are three main categories of Jamon Iberico based on the breed of the pig 
+                            and its diet: Jamon Iberico de Bellota, Jamon Iberico de Recebo, and Jamon Iberico 
+                            de Cebo. Jamon Iberico de Bellota is considered the highest quality and most 
+                            sought-after type, made from free-range Iberian pigs that roam oak forests and 
+                            feast on acorns during the montanera season. This diet gives the ham a rich, nutty 
+                            flavor and a marbled texture that melts in your mouth. Jamon Iberico de Recebo is 
+                            made from pigs whose acorn diet is supplemented with grains and legumes. This type 
+                            of ham offers a balance of flavors and a slightly firmer texture compared to Jamon 
+                            Iberico de Bellota. Jamon Iberico de Cebo is made from pigs that are fed a diet of 
+                            grains and commercial feed, resulting in a milder flavor profile and a firmer texture.
+                        </p>
+                    </div>
+                    <label for="read-more-jamon-iberico"></label>
+                </div>
+                <div class="product-category product-detail" id="prosciutto">
+                    <h2>Prosciutto</h2>
+                    <img class="product-picture" src="../Images/Hams/prosciutto.jpg"
+                    alt="Picture of Prosciutto" />
+                    <a href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-prosciutto" id="read-more-prosciutto">
+                    <div class="content">
+                        <p>
+                            Prosciutto is a type of Italian dry-cured ham renowned for its rich 
+                            flavor and tender texture. This meat comes from the hind legs of pigs, 
+                            which are first salted and then air-dried for an extended period, usually 
+                            between 9 to 18 months. Prosciutto has a sweet and salty flavor profile 
+                            accented by fruity or earthy essences depending on the region where it's 
+                            produced. In Italian, the word prosciutto translates directly to ham. 
+                            There are different types of prosciuttos, the two most popular being 
+                            prosciutto cotto and prosciutto crudo.
+                        </p>
+                        <p>
+                            Thinly sliced prosciutto is usually served as an appetizer or antipasto 
+                            and paired with cheese, olives, and bread. It adds depth of flavor to 
+                            pasta sauces, salads, sandwiches, and pizzas. The color of prosciutto 
+                            should range from brownish red to salmon pink and have strips of fat on 
+                            each slice. The fat on premium prosciutto isn’t chewy and melts in your 
+                            mouth. To ensure a quality product, look for DOP (Protected Designation 
+                            of Origin) prosciutto produced by reputable manufacturers using traditional 
+                            methods and superior ingredients like prosciutto di parma.
+                        </p>
+                    </div>
+                    <label for="read-more-prosciutto"></label>
+                </div>
+                <div class="product-category product-detail" id="serrano">
+                    <h2>Serrano Ham</h2>
+                    <img class="product-picture" src="../Images/Hams/serrano-ham.jpg"
+                    alt="Picture of Serrano Ham" />
+                    <a href="./pages/sausage.html">
+                        <h3>S</h3>
+                    </a>
+
+                    <input type="checkbox" name="read-more-serrano-ham" id="read-more-serrano-ham">
+                    <div class="content">
+                        <p>
+                            Serrano ham, also known as jamon serrano, is a type of dry-cured Spanish 
+                            ham. It's highly prized by chefs for its rich flavor and delicate texture. 
+                            It's made from the hind leg meat of white pigs, specifically the Landrace 
+                            or Duroc breeds, which are raised in Spain under strict guidelines to ensure 
+                            their quality and authenticity. The production process of serrano ham is a 
+                            time-honored tradition that involves salting the meat and then air-drying 
+                            it in a cool, high-altitude location for a minimum of nine months. On most 
+                            occasions, it's dry-cured for 12 to 18 months. During the curing process, 
+                            the ham develops its distinctive flavor profile, characterized by a perfect 
+                            balance of saltiness and sweetness with a hint of nuttiness.
+                        </p>
+                        <p>
+                            Serrano ham is often compared to Italian prosciutto, but it has unique 
+                            characteristics that set it apart. The flavor of serrano ham is more intense 
+                            and complex than prosciutto, making it a popular choice for tapas, charcuterie 
+                            boards, and other gourmet dishes. Its versatility in both traditional Spanish 
+                            cuisine and modern gastronomy has made serrano ham a staple in restaurants 
+                            worldwide. When selecting serrano ham for your establishment, look for hams 
+                            with a deep red color and marbled fat, as these indicate quality and superior 
+                            flavor. Proper storage and handling are crucial to preserving its integrity, 
+                            so keep it in a cool, dry place and slice it thin right before serving it.
+                        </p>
+                    </div>
+                    <label for="read-more-serrano-ham"></label>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Processed Meat Products | BitNJoy Company. All rights reserved.</p>
+        </footer>
+
+        <script src="../scripts.js"></script>
     </body>
 </html>
