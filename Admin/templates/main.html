@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Choose an item to (Add, Modify, Delete):</h1>
+
+    <!-- Buttons -->
+    <a href="./productparent">
+        <button class="revealButton" data-target="linkBlock">Product</button>
+    </a>
+    
+    <button class="revealButton" data-target="linkBlock">User</button>
+    <button class="revealButton" data-target="linkBlock">Order</button>
+    <button class="revealButton" data-target="linkBlock">Recipe</button>
+    <button class="revealButton" data-target="linkBlock">Brand</button>
+    <button class="revealButton" data-target="linkBlock">Language</button>
+
+    <button class="revealButton" data-target="linkBlock">Vitamin</button>
+    <button class="revealButton" data-target="linkBlock">Mineral</button>
+    <button class="revealButton" data-target="linkBlock">Product Parent</button>
+    <button class="revealButton" data-target="linkBlock">User Status</button>
+    
+    <button class="revealButton" data-target="linkBlock">Weight Type</button>
+    <button class="revealButton" data-target="linkBlock">User Type</button>
+    <button class="revealButton" data-target="linkBlock">Payment Type</button>
+    <button class="revealButton" data-target="linkBlock">Currency Type</button>
+    <button class="revealButton" data-target="linkBlock">Verification Type</button>
+
+    <!-- Hidden block with links -->
+    <div id="linkBlock" class="link-block">
+        <a href="#" class="formLink" data-form="form1">Add</a><br>
+        <a href="#" class="formLink" data-form="form2">Modify</a><br>
+        <a href="#" class="formLink" data-form="form3">Delete</a>
+    </div>
+
+    <!-- Modal for Form 1 -->
+    <div id="form1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="form1">&times;</span>
+            <h2>Add</h2>
+            <form>
+                <label for="name1">Name:</label>
+                <input type="text" id="name1" name="name1"><br><br>
+                <input type="submit" value="Submit Form 1">
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Form 2 -->
+    <div id="form2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="form2">&times;</span>
+            <h2>Form 2</h2>
+            <form>
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" name="name2"><br><br>
+                <input type="submit" value="Submit Form 2">
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Form 3 -->
+    <div id="form3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="form3">&times;</span>
+            <h2>Form 3</h2>
+            <form>
+                <label for="name3">Name:</label>
+                <input type="text" id="name3" name="name3"><br><br>
+                <input type="submit" value="Submit Form 3">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
